@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Island Blog</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="/assets/css/styles.css"/>
+  <link rel="stylesheet" href="/assets/css/form.css"/>
+</head>
+
+<body>
+    <header class="header">
+        <div class="h-logo">
+            <h3>Island Blog</h3>
+        </div>
+        
+        <div class="theme-switcher">
+        
+            <div class="icon-sun">
+                <span class="material-symbols-sharp">light_mode</span>
+            </div>
+            <div class="icon-moon">
+                <span class="material-symbols-sharp">dark_mode</span>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="left-side">
+            <h2>What islands have you been to?</h2>
+
+            <div class= "trvl-img">
+                <img src="assets/image/airplane.jpg">
+            </div>
+        </div>
+        
+        <div class="right-side">
+            
+
+            <div class="container">
+                <form id="form">
+    
+                    <label for="username"> Username:</label>
+                    <br><input type="text" id="username">
+    
+                    <br><label for="post-title"> Title:</label>
+                    <br><input type="text" id="post-title"><br>
+    
+                    <br><label for="post-content">Let's see It</label>
+                    <br>
+                    <textarea name="post-content" id="post-content" rows="10"></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/logic.js"></script>
+</body>
+
+</html>

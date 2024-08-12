@@ -1,0 +1,124 @@
+/* Theme Variables */
+:root[data-theme="light"] {
+    --submit-bg: black;
+    --submit-color: white;
+}
+
+:root[data-theme="dark"] {
+    --submit-bg: white;
+    --submit-color: black;
+}
+
+/* Main Layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Left Side */
+.left-side {
+    border-right: 4px solid var(--border-color);
+    display: block;
+    align-items: center;
+}
+
+.trvl-img img {
+    display: block;
+    margin: 0 auto;
+}
+
+.left-side h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: 2px 1px grey;
+}
+
+/* Right Side */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid var(--border-color);
+    margin-left: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form */
+#form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input[type="text"], select, textarea {
+    width: 600px;
+    padding: 12px;
+    box-shadow: 1px 1px gray;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    vertical-align: top;
+}
+
+button[type="submit"] {
+    background-color: var(--submit-bg);
+    color: var(--submit-color);
+    width: 600px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#post-content {
+    height: 100px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1025px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }  
+    .left-side {
+        border-right: none;
+    }
+    .right-side {
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .trvl-img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    input[type="text"], select, textarea,
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    #post-content {
+        height: 100px;
+    }
+}
